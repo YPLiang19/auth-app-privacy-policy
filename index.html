@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>验证器 - 安全的两步验证码生成器</title>
+  <meta name="description" content="验证器是一款简洁、安全的 iOS 两步验证（2FA）应用，密钥只保存在本机钥匙串，并由面容 ID 保护。">
+  <link rel="icon" href="assets/icon.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/icon.png" alt="">验证器</a>
+      <nav class="links">
+        <a href="#support">支持</a>
+        <a href="privacy.html">隐私政策</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <img src="assets/icon.png" alt="验证器图标">
+      <h1>验证器</h1>
+      <p>简洁、安全的两步验证码生成器。即使密码泄露，你的账户依然安全。</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>扫码即可添加</h3>
+        <p>扫描网站提供的二维码、从相册截图识别，或手动输入密钥。</p>
+      </div>
+      <div class="card">
+        <h3>密钥只在本机</h3>
+        <p>所有密钥保存在设备钥匙串中，不上传服务器，不同步 iCloud。</p>
+      </div>
+      <div class="card">
+        <h3>面容 ID 保护</h3>
+        <p>可开启面容 ID / 触控 ID / 设备密码锁，后台自动隐藏验证码。</p>
+      </div>
+      <div class="card">
+        <h3>标准兼容</h3>
+        <p>支持 TOTP / HOTP，SHA1 / SHA256 / SHA512，6–8 位验证码。</p>
+      </div>
+    </div>
+
+    <section id="subscription">
+      <h2>订阅说明</h2>
+      <div class="notice">
+        验证器 Pro 为自动续期订阅：新用户可免费试用 7 天，试用结束后每月 ¥6（以 App Store 显示价格为准）。
+        如不希望续订，请在试用期或当前订阅期结束前至少 24 小时，前往 iPhone“设置 &gt; Apple 账户 &gt; 订阅”关闭自动续订。
+      </div>
+    </section>
+
+    <section id="support">
+      <h2>常见问题</h2>
+
+      <details>
+        <summary>免费试用结束后会自动扣费吗？</summary>
+        <p>会。开始试用即开通了订阅，若在试用结束前 24 小时内仍未取消，Apple 将按月自动扣费 ¥6。试用期内取消不会产生任何费用，并可继续使用到试用期结束。</p>
+      </details>
+
+      <details>
+        <summary>如何取消订阅？</summary>
+        <ol>
+          <li>打开 iPhone 的“设置”App；</li>
+          <li>轻点顶部你的名字，进入“订阅”；</li>
+          <li>选择“验证器 Pro”，轻点“取消订阅”。</li>
+        </ol>
+        <p>也可以在验证器的“设置 &gt; 管理订阅”中直接操作。</p>
+      </details>
+
+      <details>
+        <summary>换了新手机或重装后，账户能恢复吗？</summary>
+        <p>为了安全，密钥只保存在当前设备上，不会随 iCloud 或备份迁移。更换设备前，请在旧设备上进入每个账户的“编辑 &gt; 导出二维码”，用新设备扫描即可迁移。订阅本身可通过“恢复购买”在新设备上恢复。</p>
+      </details>
+
+      <details>
+        <summary>手机丢失了怎么办？</summary>
+        <p>请使用各网站在开启两步验证时提供的“备用码/恢复码”登录，然后重新绑定验证器。建议在添加每个账户时妥善保存这些恢复码。</p>
+      </details>
+
+      <details>
+        <summary>订阅过期后还能看到我的账户吗？</summary>
+        <p>订阅过期后无法查看验证码，但你仍然可以在订阅页面点击“导出账户”，把账户迁移到其他验证器应用，数据不会被锁住。</p>
+      </details>
+
+      <details>
+        <summary>扫码时提示“这不是两步验证二维码”？</summary>
+        <p>验证器支持标准的 otpauth:// 二维码。请确认扫描的是网站“身份验证器应用 / Authenticator App”选项下显示的二维码，而不是登录二维码或短信验证。</p>
+      </details>
+    </section>
+
+    <section id="contact">
+      <h2>联系我们</h2>
+      <p>遇到问题或有建议，欢迎通过
+        <a href="https://github.com/YPLiang19/auth-app-privacy-policy/issues">GitHub Issues</a>
+        反馈，我们会尽快回复。</p>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span>© 2026 验证器</span>
+      <span>
+        <a href="privacy.html">隐私政策</a> ·
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">使用条款（EULA）</a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
