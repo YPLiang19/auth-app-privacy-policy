@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>隐私政策 - 验证器</title>
-  <meta name="description" content="验证器（iOS 两步验证应用）隐私政策：我们不收集任何个人数据，所有密钥仅保存在你的设备上。">
+  <meta name="description" content="验证器（iOS 两步验证应用）隐私政策：我们不收集任何个人数据，密钥仅保存在你的设备与你自己的 iCloud 钥匙串中。">
   <link rel="icon" href="assets/icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -22,9 +22,9 @@
   <main class="wrap">
     <article class="doc" id="zh">
       <h1>隐私政策</h1>
-      <p class="meta">适用于：验证器（iOS App）　生效日期：2026 年 9 月 23 日</p>
+      <p class="meta">适用于：验证器（iOS App）　生效日期：2026 年 9 月 24 日</p>
 
-      <p>本隐私政策说明“验证器”（以下简称“本应用”）如何处理你的信息。简而言之：<strong>本应用不收集、不上传、不出售任何个人数据</strong>，你添加的所有账户和密钥都只保存在你自己的设备上。</p>
+      <p>本隐私政策说明“验证器”（以下简称“本应用”）如何处理你的信息。简而言之：<strong>本应用不收集、不上传、不出售任何个人数据</strong>，你添加的所有账户和密钥只保存在你自己的设备及你本人的 iCloud 钥匙串中，开发者无法访问。</p>
 
       <h2>1. 我们不收集的信息</h2>
       <ul>
@@ -35,9 +35,10 @@
 
       <h2>2. 保存在你设备上的数据</h2>
       <ul>
-        <li><strong>两步验证账户与密钥：</strong>包括服务名称、账户名和密钥，保存在 iOS 钥匙串中，访问级别为“仅在设备解锁时、仅限本机”，不会同步到 iCloud，也不会包含在迁移到新设备的备份中。</li>
+        <li><strong>两步验证账户与密钥：</strong>包括服务名称、账户名、密钥和列表顺序，保存在 iOS 钥匙串中，仅在设备解锁时可读取。</li>
+        <li><strong>iCloud 钥匙串同步：</strong>如果你在系统中开启了 iCloud 钥匙串，上述数据会由 Apple 端到端加密后同步到你登录同一 Apple 账户的其他设备，Apple 与开发者均无法读取其内容，适用 <a href="https://support.apple.com/zh-cn/102651">Apple iCloud 数据安全说明</a>。未开启时，数据仅保存在本机。</li>
         <li><strong>应用设置：</strong>例如是否开启应用锁，保存在本机。</li>
-        <li>删除本应用后，上述数据可能会被系统一并清除且无法恢复，请提前做好迁移。</li>
+        <li>在应用内删除账户时，该账户也会从你其他通过 iCloud 同步的设备上移除。</li>
       </ul>
 
       <h2>3. 设备权限的使用</h2>
@@ -55,13 +56,13 @@
       <p>由于我们不收集任何个人数据，因此不会与任何第三方共享、出租或出售你的数据。</p>
 
       <h2>6. 数据安全</h2>
-      <p>密钥由 iOS 钥匙串加密保护。你还可以在应用内开启面容 ID / 触控 ID / 设备密码锁，应用进入后台时会自动隐藏验证码。导出账户二维码前需要再次验证身份。</p>
+      <p>密钥由 iOS 钥匙串加密保护，经 iCloud 同步时为端到端加密。你还可以在应用内开启面容 ID / 触控 ID / 设备密码锁，应用进入后台时会自动隐藏验证码。导出账户二维码前需要再次验证身份。</p>
 
       <h2>7. 儿童隐私</h2>
       <p>本应用不面向 13 岁以下儿童，也不会有意收集任何儿童的个人信息。</p>
 
       <h2>8. 你的权利</h2>
-      <p>所有数据都在你的设备上，你可以随时在应用内编辑或删除任意账户，也可以通过删除本应用清除全部数据。由于我们不持有你的数据，无法也不需要为你提供数据查询或删除服务。</p>
+      <p>所有数据都在你的设备与你本人的 iCloud 钥匙串中，你可以随时在应用内编辑或删除任意账户，删除会同步到你的所有设备。由于我们不持有你的数据，无法也不需要为你提供数据查询或删除服务。</p>
 
       <h2>9. 政策更新</h2>
       <p>如本政策发生变更，我们将在本页面发布更新后的版本并修改生效日期。重大变更会在应用更新说明中提示。</p>
@@ -72,9 +73,9 @@
 
     <article class="doc" id="en" lang="en">
       <h1>Privacy Policy</h1>
-      <p class="meta">Applies to: 验证器 (Authenticator) for iOS　Effective date: September 23, 2026</p>
+      <p class="meta">Applies to: 验证器 (Authenticator) for iOS　Effective date: September 24, 2026</p>
 
-      <p>This policy explains how 验证器 (“the App”) handles your information. In short: <strong>the App does not collect, upload, or sell any personal data.</strong> All accounts and secrets you add stay on your own device.</p>
+      <p>This policy explains how 验证器 (“the App”) handles your information. In short: <strong>the App does not collect, upload, or sell any personal data.</strong> All accounts and secrets you add stay on your own devices and in your own iCloud Keychain, which we cannot access.</p>
 
       <h2>1. Information we do not collect</h2>
       <ul>
@@ -85,9 +86,10 @@
 
       <h2>2. Data stored on your device</h2>
       <ul>
-        <li><strong>Two-factor accounts and secrets</strong> (issuer, account name, secret key) are stored in the iOS Keychain with “when unlocked, this device only” protection. They are not synced to iCloud and are not included in device-to-device migration backups.</li>
+        <li><strong>Two-factor accounts and secrets</strong> (issuer, account name, secret key, and list order) are stored in the iOS Keychain and are readable only while the device is unlocked.</li>
+        <li><strong>iCloud Keychain sync:</strong> if you have iCloud Keychain turned on, this data is end-to-end encrypted by Apple and synced to your other devices signed in to the same Apple Account. Neither Apple nor we can read it (see <a href="https://support.apple.com/102651">iCloud data security overview</a>). If iCloud Keychain is off, the data stays on this device only.</li>
         <li><strong>App settings</strong>, such as whether the app lock is enabled, are stored locally.</li>
-        <li>Deleting the App may permanently remove this data. Please migrate your accounts first.</li>
+        <li>Deleting an account in the App also removes it from your other devices synced via iCloud.</li>
       </ul>
 
       <h2>3. Device permissions</h2>
@@ -105,13 +107,13 @@
       <p>Because we collect no personal data, we do not share, rent, or sell any data to third parties.</p>
 
       <h2>6. Security</h2>
-      <p>Secrets are protected by the encrypted iOS Keychain. You can also enable a Face ID / Touch ID / passcode lock; codes are hidden when the App moves to the background, and exporting an account QR code requires authentication.</p>
+      <p>Secrets are protected by the encrypted iOS Keychain and are end-to-end encrypted when synced through iCloud. You can also enable a Face ID / Touch ID / passcode lock; codes are hidden when the App moves to the background, and exporting an account QR code requires authentication.</p>
 
       <h2>7. Children’s privacy</h2>
       <p>The App is not directed at children under 13 and does not knowingly collect personal information from children.</p>
 
       <h2>8. Your rights</h2>
-      <p>All data lives on your device. You can edit or delete any account in the App at any time, or delete the App to remove everything. Since we hold none of your data, there is nothing for us to access or delete on your behalf.</p>
+      <p>All data lives on your devices and in your own iCloud Keychain. You can edit or delete any account in the App at any time, and deletions sync to all your devices. Since we hold none of your data, there is nothing for us to access or delete on your behalf.</p>
 
       <h2>9. Changes to this policy</h2>
       <p>If this policy changes, we will post the updated version on this page and revise the effective date. Significant changes will be noted in the App’s release notes.</p>
